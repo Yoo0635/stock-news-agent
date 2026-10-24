@@ -1,0 +1,54 @@
+# 리포트 종류별로 보낼 Slack 채널과 저장할 Obsidian 폴더
+# Slack 워크스페이스: yoo-ka87999
+# Obsidian Vault: /Users/yoomac/Documents/Obsidian Vault
+
+obsidian_root: Market
+
+categories:
+  daily:
+    description: QQQM 등락 원인 + 시장 분위기
+    slack_channel: market-daily
+    slack_channel_id: C0CBNLG5FHR
+    obsidian_dir: 01-Daily
+    file_pattern: "{yyyy}/{mm}/{yyyy}-{mm}-{dd}.md"
+    template: _Templates/daily.md
+
+  etf:
+    description: ETF 전반 소식 (자금 흐름, 상장, 리밸런싱)
+    slack_channel: market-etf
+    slack_channel_id: C0CBPJL3GQ5
+    obsidian_dir: 02-ETF
+    file_pattern: "{yyyy}/{mm}/{yyyy}-{mm}-{dd}.md"
+    template: _Templates/etf.md
+
+  macro:
+    description: 금리·달러·VIX, 경제지표·실적 일정
+    slack_channel: market-macro
+    slack_channel_id: C0CBSUDENPQ
+    obsidian_dir: 03-Macro
+    file_pattern: "{yyyy}/{mm}/{yyyy}-{mm}-{dd}.md"
+    template: _Templates/macro.md
+
+  weekly:
+    description: 주간 요약 (v2)
+    slack_channel: market-weekly
+    slack_channel_id: C0CBNLGA1L3
+    obsidian_dir: 04-Weekly
+    file_pattern: "{yyyy}/{yyyy}-W{ww}.md"
+    template: _Templates/weekly.md
+
+  ticker:
+    description: 종목별 누적 노트 (Slack 전송 없음)
+    slack_channel: null
+    slack_channel_id: null
+    obsidian_dir: 05-Tickers
+    file_pattern: "{ticker}.md"
+    template: _Templates/ticker.md
+
+  log:
+    description: 실행 성공/실패 기록
+    slack_channel: market-bot-log
+    slack_channel_id: C0CBYJ9L760
+    obsidian_dir: 99-Logs
+    file_pattern: "{yyyy}/{mm}/{yyyy}-{mm}-{dd}.md"
+    template: _Templates/log.md
